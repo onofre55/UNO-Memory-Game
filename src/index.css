@@ -1,0 +1,217 @@
+/*Resetting Global Values*/
+
+* {
+
+  margin:0;
+  padding: 0;
+
+}
+
+body {
+
+  background-color: rgb(0, 0, 0);
+  font-family: Inter, 'sans-serif';
+
+}
+
+h1 {
+
+  font-size: 5rem;
+  text-align: center;
+
+}
+
+h1 .uno-word {
+
+  color: #c40c00;
+  text-shadow: 2.2px 2.2px 1px #ffffff;
+
+}
+
+h1 .memory-word {
+
+  color: #0849a3;
+  text-shadow: 2.2px 2.2px 1px #ffffff;
+
+}
+
+h1 .game-word {
+
+  color: #e7d004;
+  text-shadow: 2.2px 2.2px 1px #ffffff;
+
+}
+
+.container {
+
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+
+}
+
+.card {
+
+  background-image: url(/public/unoCards/UnoCardBack.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  animation: 2s hideCard linear;
+
+}
+
+img {
+
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: 2s hideCardImage linear;
+  border-radius: 8%;
+
+}
+
+.card.active {
+
+  transform: rotateY(0);
+
+}
+
+.card.active img {
+
+  opacity: 1;
+
+}
+
+.unmatch {
+
+  animation: 2s hideCard linear;
+
+}
+
+.end-game-message {
+
+  padding-top: 4rem;
+  font-size: 2rem;
+  color: white;
+
+}
+
+.all-word {
+
+  color: #328a10;
+  text-shadow: 1px 1px 1px #ffffff;
+  
+}
+
+.cards-word {
+
+  color: #c40c00;
+  text-shadow: 1px 1px 1px #ffffff;
+
+}
+
+.matched-word{
+
+  color: #e7d004;
+  text-shadow: 1px 1px 1px #ffffff;
+
+}
+
+.play-again {
+
+  margin: 2rem 2rem;
+  padding: 4rem 4rem;
+  font-size: 3rem;
+  border-radius: 1rem;
+  background-color: #e7d004;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+
+}
+
+.play-again:hover {
+
+  background-color: #d3c32c;
+  
+}
+
+.congratulations-word {
+
+  color: #0849a3;
+  text-shadow: 1px 1px 1px #ffffff;
+
+}
+
+.turns-count {
+
+  font-size: 2rem;
+  background-color: #e7d004;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  
+}
+
+/*Animations*/
+@keyframes hideCard {
+
+  from {
+
+    transform: rotateY(0);
+
+  }
+
+  to {
+
+    transform: rotateY(360deg);
+
+  }
+
+}
+
+@keyframes hideCardImage {
+
+  from {
+
+    opacity: 1;
+
+  }
+  
+  to {
+
+    opacity: 0;
+
+  }
+
+}
+
+/*Mobile Version */ 
+@media screen and (max-width: 680px) {
+
+  .container {
+
+    width: 50%;
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  
+
+}
+
+/*Tablet Version */ 
+@media screen and (min-width: 681px) and (max-width: 1020px) {
+
+  .container {
+
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
+}
+
