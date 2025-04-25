@@ -22,11 +22,7 @@ A memory matching game built with React. The game uses uno cards, and the player
 [Live Demo](https://uno-memory-game-jo.netlify.app/)
 
 ### Game in Progress
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/6b352c33-c4c6-4a72-b6a5-8f6ece936e0d" />
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/8b6be952-436d-4356-8458-83ecd87d3e7e" />
 
 ### Ending Screen
-<img width="958" alt="image" src="https://github.com/user-attachments/assets/49f10bd4-68f3-4788-b71b-a547975e429b" />
-
-
-
-
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/7728cf4d-784a-423e-8d93-d54bce2d3610" />
